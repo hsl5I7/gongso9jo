@@ -1,0 +1,27 @@
+# OS / editor junk
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Tooling / session state
+**/.claude-flow/
+**/.claude/
+
+# Archives
+*.zip
+
+# Large data & model binaries (kept local; too big / not needed in git)
+/lstm/output/
+/lstm/data/
+/lstm/models/
+/lstm/_attic/
+/xgboost/wf_v4_70feat_thr05/
+/xgboost/wf_v4_77feat_thr05/
+/xgboost/*.parquet
+/outputs/cnn/
+/to_team_ensemble/xgb_baseline_output/
+/to_team_ensemble/xgb_youtube_output/

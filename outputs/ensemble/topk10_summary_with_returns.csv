@@ -1,0 +1,11 @@
+variant,model,winrate%,avg_ret%,avg_ret_win%
+baseline,Rand,31.8,-1.51,11.54
+baseline,XGB,35.0,-0.97,11.35
+baseline,LSTM,34.3,-1.14,9.81
+baseline,CNN,32.9,-1.34,10.93
+baseline,ENS,35.3,-0.86,11.01
+youtube,Rand,31.8,-1.51,11.54
+youtube,XGB,34.5,-1.09,11.31
+youtube,LSTM,34.4,-1.4,9.45
+youtube,CNN,34.0,-1.08,11.56
+youtube,ENS,35.6,-1.06,10.43

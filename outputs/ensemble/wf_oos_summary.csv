@@ -1,0 +1,3 @@
+variant,oos_trades,oos_win%,oos_avg_ret%,oos_ex2020%,pos_folds,n_oos_folds
+baseline,3611,46.5,3.94,0.2,5,7
+youtube,1644,52.8,7.53,-0.34,5,7

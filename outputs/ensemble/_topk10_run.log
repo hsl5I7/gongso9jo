@@ -1,0 +1,82 @@
+
+==============================================================================
+BASELINE  (n=206,165, days=1,649, folds 2018-2025, base_rate=0.3130)
+  top-10/day win-rate sweep: 1,326 weights × 8 folds
+    fold 2018: done (8s)
+    fold 2019: done (15s)
+    fold 2020: done (25s)
+    fold 2021: done (39s)
+    fold 2022: done (50s)
+    fold 2023: done (64s)
+    fold 2024: done (76s)
+    fold 2025: done (88s)
+
+  [reference top-10/day win rate, mean over folds]
+     random (base)      = 0.3130
+     XGB-alone          = 0.3497
+     equal 1/3          = 0.3362
+     AUC-opt (0.82, 0.16, 0.02) = 0.3525
+  [top-10 mean-fold-best] w=(0.82, 0.12, 0.06)  mean-fold winrate=0.3531
+  [top-10 pooled-best]    w=(0.74, 0.22, 0.04)  pooled winrate=0.3534
+  [walk-forward OOS]       mean winrate=0.3390  (excl first=0.3458)
+
+  per-fold win rate @ mean-fold-best (0.82, 0.12, 0.06):
+     2018: winrate=0.3098  (trades=2,040, base=0.276)
+     2019: winrate=0.3251  (trades=2,070, base=0.287)
+     2020: winrate=0.5452  (trades=2,080, base=0.460)
+     2021: winrate=0.3419  (trades=2,100, base=0.325)
+     2022: winrate=0.3226  (trades=2,080, base=0.280)
+     2023: winrate=0.3610  (trades=2,050, base=0.307)
+     2024: winrate=0.2448  (trades=2,030, base=0.230)
+     2025: winrate=0.3740  (trades=2,040, base=0.327)
+  walk-forward selected weights per fold:
+     2018: sel=equal(no prior)    OOS winrate=0.2912
+     2019: sel=(1.00,0.00,0.00)   OOS winrate=0.2976
+     2020: sel=(0.32,0.62,0.06)   OOS winrate=0.5327
+     2021: sel=(0.74,0.22,0.04)   OOS winrate=0.3433
+     2022: sel=(0.50,0.50,0.00)   OOS winrate=0.3168
+     2023: sel=(0.50,0.50,0.00)   OOS winrate=0.3493
+     2024: sel=(0.50,0.50,0.00)   OOS winrate=0.2192
+     2025: sel=(0.82,0.16,0.02)   OOS winrate=0.3618
+
+==============================================================================
+YOUTUBE  (n=206,165, days=1,649, folds 2018-2025, base_rate=0.3130)
+  top-10/day win-rate sweep: 1,326 weights × 8 folds
+    fold 2018: done (8s)
+    fold 2019: done (15s)
+    fold 2020: done (25s)
+    fold 2021: done (38s)
+    fold 2022: done (50s)
+    fold 2023: done (64s)
+    fold 2024: done (76s)
+    fold 2025: done (88s)
+
+  [reference top-10/day win rate, mean over folds]
+     random (base)      = 0.3130
+     XGB-alone          = 0.3449
+     equal 1/3          = 0.3480
+     AUC-opt (0.88, 0.11, 0.01) = 0.3525
+  [top-10 mean-fold-best] w=(0.60, 0.32, 0.08)  mean-fold winrate=0.3559
+  [top-10 pooled-best]    w=(0.60, 0.32, 0.08)  pooled winrate=0.3563
+  [walk-forward OOS]       mean winrate=0.3476  (excl first=0.3527)
+
+  per-fold win rate @ mean-fold-best (0.60, 0.32, 0.08):
+     2018: winrate=0.3412  (trades=2,040, base=0.276)
+     2019: winrate=0.3082  (trades=2,070, base=0.287)
+     2020: winrate=0.5413  (trades=2,080, base=0.460)
+     2021: winrate=0.3624  (trades=2,100, base=0.325)
+     2022: winrate=0.3413  (trades=2,080, base=0.280)
+     2023: winrate=0.3224  (trades=2,050, base=0.307)
+     2024: winrate=0.2384  (trades=2,030, base=0.230)
+     2025: winrate=0.3917  (trades=2,040, base=0.327)
+  walk-forward selected weights per fold:
+     2018: sel=equal(no prior)    OOS winrate=0.3123
+     2019: sel=(0.86,0.14,0.00)   OOS winrate=0.3155
+     2020: sel=(0.86,0.14,0.00)   OOS winrate=0.5433
+     2021: sel=(0.86,0.14,0.00)   OOS winrate=0.3662
+     2022: sel=(0.86,0.14,0.00)   OOS winrate=0.3221
+     2023: sel=(0.68,0.28,0.04)   OOS winrate=0.3098
+     2024: sel=(0.54,0.38,0.08)   OOS winrate=0.2350
+     2025: sel=(0.90,0.04,0.06)   OOS winrate=0.3770
+
+→ saved: /Users/soulyhan/Library/CloudStorage/OneDrive-Personal/컴퓨터ai/3-1/공개SW/prj/outputs/ensemble/topk10_weights_summary.csv

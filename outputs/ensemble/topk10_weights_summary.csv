@@ -1,0 +1,3 @@
+variant,k,base_rate,mf_w_xgb,mf_w_lstm,mf_w_cnn,mf_winrate,pl_w_xgb,pl_w_lstm,pl_w_cnn,pl_winrate,walkforward_oos_winrate,ref_random,ref_xgb,ref_equal,ref_auc_opt
+baseline,10,0.313021,0.82,0.12,0.06,0.353055,0.74,0.22,0.04,0.353426,0.338982,0.313021,0.349662,0.336226,0.352506
+youtube,10,0.313021,0.6,0.32,0.08,0.355874,0.6,0.32,0.08,0.356277,0.347623,0.313021,0.344887,0.348034,0.35248

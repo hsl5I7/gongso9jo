@@ -1,0 +1,9 @@
+variant,model,mean_winrate%,mean_edge%p
+baseline,XGB,35.0,3.8
+baseline,LSTM,34.3,3.1
+baseline,CNN,32.9,1.8
+baseline,ENS,35.3,4.2
+youtube,XGB,34.5,3.4
+youtube,LSTM,34.4,3.3
+youtube,CNN,34.0,2.9
+youtube,ENS,35.6,4.4
