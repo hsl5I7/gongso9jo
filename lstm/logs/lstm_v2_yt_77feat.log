@@ -1,0 +1,134 @@
+[device] cpu  [lookback] 30
+[combined] general + youtube → X shape=(441920, 192)
+[data] raw_features=192  rows=441,920  tickers=230  date=1999-06-28~2026-05-06
+[selected] output/perm_sel/selected_features_77feat_Aonly.csv → 77개 피처 사용
+[features] LSTM 입력: 77개 (selected=77 모드)
+[folds] 14개
+  fold 00: train 1999-06-28~2010-11-01 | val 2011-01-01~2011-12-31 | test 2012-03-01~2012-12-31
+  fold 01: train 1999-06-28~2011-11-01 | val 2012-01-01~2012-12-31 | test 2013-03-02~2013-12-31
+  fold 02: train 1999-06-28~2012-11-01 | val 2013-01-01~2013-12-31 | test 2014-03-02~2014-12-31
+  fold 03: train 1999-06-28~2013-11-01 | val 2014-01-01~2014-12-31 | test 2015-03-02~2015-12-31
+  fold 04: train 1999-06-28~2014-11-01 | val 2015-01-01~2015-12-31 | test 2016-03-01~2016-12-31
+  fold 05: train 1999-06-28~2015-11-01 | val 2016-01-01~2016-12-31 | test 2017-03-02~2017-12-31
+  fold 06: train 1999-06-28~2016-11-01 | val 2017-01-01~2017-12-31 | test 2018-03-02~2018-12-31
+  fold 07: train 1999-06-28~2017-11-01 | val 2018-01-01~2018-12-31 | test 2019-03-02~2019-12-31
+  fold 08: train 1999-06-28~2018-11-01 | val 2019-01-01~2019-12-31 | test 2020-03-01~2020-12-31
+  fold 09: train 1999-06-28~2019-11-01 | val 2020-01-01~2020-12-31 | test 2021-03-02~2021-12-31
+  fold 10: train 1999-06-28~2020-11-01 | val 2021-01-01~2021-12-31 | test 2022-03-02~2022-12-31
+  fold 11: train 1999-06-28~2021-11-01 | val 2022-01-01~2022-12-31 | test 2023-03-02~2023-12-31
+  fold 12: train 1999-06-28~2022-11-01 | val 2023-01-01~2023-12-31 | test 2024-03-01~2024-12-31
+  fold 13: train 1999-06-28~2023-11-01 | val 2024-01-01~2024-12-31 | test 2025-03-02~2025-12-31
+
+=== fold 0 (test 2012) ===
+  samples: train=68,659  val=11,056  test=8,702
+  train_pos=0.3223  pos_weight=none
+  epoch  1: loss=0.6554  val_loss=0.5917  val_auc=0.5318  val_ap=0.2998  (7.8s)
+  epoch  2: loss=0.6275  val_loss=0.5907  val_auc=0.5384  val_ap=0.2925  (8.4s)
+  epoch  3: loss=0.6239  val_loss=0.5929  val_auc=0.5367  val_ap=0.2939  (13.9s)
+  epoch  4: loss=0.6197  val_loss=0.5934  val_auc=0.5347  val_ap=0.2991  (8.4s)
+  epoch  5: loss=0.6140  val_loss=0.5916  val_auc=0.5400  val_ap=0.3068  (7.4s)
+  epoch  6: loss=0.6060  val_loss=0.5942  val_auc=0.5417  val_ap=0.3090  (7.3s)
+  epoch  7: loss=0.5968  val_loss=0.5956  val_auc=0.5422  val_ap=0.3071  (8.8s)
+  epoch  8: loss=0.5851  val_loss=0.6061  val_auc=0.5410  val_ap=0.3080  (7.4s)
+  epoch  9: loss=0.5727  val_loss=0.6180  val_auc=0.5402  val_ap=0.3077  (10.6s)
+  epoch 10: loss=0.5584  val_loss=0.6282  val_auc=0.5447  val_ap=0.3085  (7.3s)
+  epoch 11: loss=0.5467  val_loss=0.6404  val_auc=0.5458  val_ap=0.3076  (7.3s)
+  epoch 12: loss=0.5341  val_loss=0.6512  val_auc=0.5474  val_ap=0.3098  (7.9s)
+  epoch 13: loss=0.5242  val_loss=0.6606  val_auc=0.5497  val_ap=0.3087  (7.7s)
+  epoch 14: loss=0.5151  val_loss=0.6787  val_auc=0.5458  val_ap=0.3050  (7.6s)
+  epoch 15: loss=0.5047  val_loss=0.6849  val_auc=0.5428  val_ap=0.3053  (8.9s)
+  epoch 16: loss=0.4974  val_loss=0.6913  val_auc=0.5461  val_ap=0.3069  (7.4s)
+  [early stop] epoch 16
+  [TEST] AUC=0.5668  AP=0.3398  pos_rate=0.2954
+
+=== fold 1 (test 2013) ===
+  samples: train=79,925  val=10,766  test=10,707
+  train_pos=0.3158  pos_weight=none
+  epoch  1: loss=0.6607  val_loss=0.6262  val_auc=0.5195  val_ap=0.3206  (9.9s)
+  epoch  2: loss=0.6240  val_loss=0.6255  val_auc=0.5217  val_ap=0.3234  (10.6s)
+  epoch  3: loss=0.6204  val_loss=0.6243  val_auc=0.5328  val_ap=0.3345  (10.8s)
+  epoch  4: loss=0.6166  val_loss=0.6243  val_auc=0.5362  val_ap=0.3443  (9.0s)
+  epoch  5: loss=0.6120  val_loss=0.6252  val_auc=0.5407  val_ap=0.3448  (8.5s)
+  epoch  6: loss=0.6047  val_loss=0.6245  val_auc=0.5496  val_ap=0.3544  (8.2s)
+  epoch  7: loss=0.5967  val_loss=0.6289  val_auc=0.5441  val_ap=0.3459  (8.2s)
+  epoch  8: loss=0.5876  val_loss=0.6329  val_auc=0.5510  val_ap=0.3491  (8.3s)
+  epoch  9: loss=0.5757  val_loss=0.6397  val_auc=0.5434  val_ap=0.3434  (8.3s)
+  epoch 10: loss=0.5665  val_loss=0.6554  val_auc=0.5374  val_ap=0.3375  (8.3s)
+  epoch 11: loss=0.5540  val_loss=0.6718  val_auc=0.5316  val_ap=0.3350  (8.4s)
+  [early stop] epoch 11
+  [TEST] AUC=0.5348  AP=0.3083  pos_rate=0.2774
+
+=== fold 2 (test 2014) ===
+  samples: train=90,813  val=12,362  test=10,691
+  train_pos=0.3138  pos_weight=none
+  epoch  1: loss=0.6366  val_loss=0.6032  val_auc=0.5500  val_ap=0.3435  (9.4s)
+  epoch  2: loss=0.6197  val_loss=0.6029  val_auc=0.5524  val_ap=0.3397  (9.3s)
+  epoch  3: loss=0.6166  val_loss=0.6038  val_auc=0.5498  val_ap=0.3351  (9.3s)
+  epoch  4: loss=0.6126  val_loss=0.6043  val_auc=0.5473  val_ap=0.3301  (9.3s)
+  epoch  5: loss=0.6068  val_loss=0.6073  val_auc=0.5406  val_ap=0.3284  (9.5s)
+  [early stop] epoch 5
+  [TEST] AUC=0.5379  AP=0.3766  pos_rate=0.3336
+
+=== fold 3 (test 2015) ===
+  samples: train=103,016  val=12,391  test=14,836
+  train_pos=0.3133  pos_weight=none
+  epoch  1: loss=0.6324  val_loss=0.6505  val_auc=0.5239  val_ap=0.3679  (10.9s)
+  epoch  2: loss=0.6194  val_loss=0.6504  val_auc=0.5265  val_ap=0.3736  (10.6s)
+  epoch  3: loss=0.6159  val_loss=0.6527  val_auc=0.5210  val_ap=0.3762  (10.7s)
+  epoch  4: loss=0.6117  val_loss=0.6554  val_auc=0.5146  val_ap=0.3770  (10.8s)
+  epoch  5: loss=0.6048  val_loss=0.6612  val_auc=0.5157  val_ap=0.3767  (11.5s)
+  [early stop] epoch 5
+  [TEST] AUC=0.5268  AP=0.3253  pos_rate=0.2935
+
+=== fold 4 (test 2016) ===
+  samples: train=115,390  val=16,980  test=14,862
+  train_pos=0.3146  pos_weight=none
+  epoch  1: loss=0.6424  val_loss=0.6238  val_auc=0.5283  val_ap=0.3424  (11.9s)
+  epoch  2: loss=0.6207  val_loss=0.6233  val_auc=0.5321  val_ap=0.3488  (11.7s)
+  epoch  3: loss=0.6172  val_loss=0.6243  val_auc=0.5299  val_ap=0.3466  (11.9s)
+  epoch  4: loss=0.6122  val_loss=0.6265  val_auc=0.5310  val_ap=0.3459  (12.5s)
+  epoch  5: loss=0.6053  val_loss=0.6311  val_auc=0.5325  val_ap=0.3501  (13.4s)
+  epoch  6: loss=0.5970  val_loss=0.6357  val_auc=0.5373  val_ap=0.3586  (12.2s)
+  epoch  7: loss=0.5874  val_loss=0.6420  val_auc=0.5404  val_ap=0.3575  (12.1s)
+  epoch  8: loss=0.5795  val_loss=0.6594  val_auc=0.5287  val_ap=0.3543  (12.2s)
+  epoch  9: loss=0.5696  val_loss=0.6825  val_auc=0.5232  val_ap=0.3517  (12.1s)
+  epoch 10: loss=0.5610  val_loss=0.6759  val_auc=0.5305  val_ap=0.3533  (11.7s)
+  [early stop] epoch 10
+  [TEST] AUC=0.5557  AP=0.3303  pos_rate=0.2735
+
+=== fold 5 (test 2017) ===
+  samples: train=131,702  val=17,215  test=14,311
+  train_pos=0.3183  pos_weight=none
+  epoch  1: loss=0.6437  val_loss=0.5887  val_auc=0.5706  val_ap=0.3358  (14.0s)
+  epoch  2: loss=0.6229  val_loss=0.5887  val_auc=0.5696  val_ap=0.3363  (13.8s)
+  epoch  3: loss=0.6191  val_loss=0.5878  val_auc=0.5665  val_ap=0.3363  (13.4s)
+  epoch  4: loss=0.6151  val_loss=0.5909  val_auc=0.5596  val_ap=0.3321  (13.8s)
+  [early stop] epoch 4
+  [TEST] AUC=0.5555  AP=0.4005  pos_rate=0.3527
+
+=== fold 6 (test 2018) ===
+  samples: train=149,195  val=16,728  test=18,072
+  train_pos=0.3115  pos_weight=none
+  epoch  1: loss=0.6336  val_loss=0.6384  val_auc=0.5391  val_ap=0.3700  (16.7s)
+  epoch  2: loss=0.6176  val_loss=0.6379  val_auc=0.5424  val_ap=0.3710  (18.2s)
+  epoch  3: loss=0.6140  val_loss=0.6390  val_auc=0.5421  val_ap=0.3648  (15.6s)
+  epoch  4: loss=0.6104  val_loss=0.6430  val_auc=0.5320  val_ap=0.3599  (15.9s)
+  epoch  5: loss=0.6059  val_loss=0.6487  val_auc=0.5230  val_ap=0.3532  (15.1s)
+  [early stop] epoch 5
+  [TEST] AUC=0.5524  AP=0.3243  pos_rate=0.2764
+
+=== fold 7 (test 2019) ===
+  samples: train=165,228  val=21,937  test=17,913
+  train_pos=0.3132  pos_weight=none
+  epoch  1: loss=0.6348  val_loss=0.5916  val_auc=0.5454  val_ap=0.3142  (17.6s)
+  epoch  2: loss=0.6196  val_loss=0.5868  val_auc=0.5629  val_ap=0.3167  (18.3s)
+  epoch  3: loss=0.6162  val_loss=0.5891  val_auc=0.5559  val_ap=0.3116  (17.6s)
+  epoch  4: loss=0.6124  val_loss=0.5932  val_auc=0.5438  val_ap=0.3057  (17.4s)
+  epoch  5: loss=0.6072  val_loss=0.5999  val_auc=0.5297  val_ap=0.2962  (21.1s)
+  [early stop] epoch 5
+  [TEST] AUC=0.5481  AP=0.3380  pos_rate=0.2891
+
+=== fold 8 (test 2020) ===
+  samples: train=187,353  val=21,252  test=25,889
+  train_pos=0.3090  pos_weight=none
+  epoch  1: loss=0.6267  val_loss=0.6091  val_auc=0.5441  val_ap=0.3442  (20.8s)

@@ -1,0 +1,37 @@
+[device] cpu  [lookback] 30
+[combined] general + youtube → X shape=(441920, 192)
+[data] raw_features=192  rows=441,920  tickers=230  date=1999-06-28~2026-05-06
+[selected] output/perm_sel/selected_features_77feat_Aonly.csv → 77개 피처 사용
+[features] LSTM 입력: 77개 (selected=77 모드)
+[folds] 14개
+  fold 00: train 1999-06-28~2010-11-01 | val 2011-01-01~2011-12-31 | test 2012-03-01~2012-12-31
+  fold 01: train 1999-06-28~2011-11-01 | val 2012-01-01~2012-12-31 | test 2013-03-02~2013-12-31
+  fold 02: train 1999-06-28~2012-11-01 | val 2013-01-01~2013-12-31 | test 2014-03-02~2014-12-31
+  fold 03: train 1999-06-28~2013-11-01 | val 2014-01-01~2014-12-31 | test 2015-03-02~2015-12-31
+  fold 04: train 1999-06-28~2014-11-01 | val 2015-01-01~2015-12-31 | test 2016-03-01~2016-12-31
+  fold 05: train 1999-06-28~2015-11-01 | val 2016-01-01~2016-12-31 | test 2017-03-02~2017-12-31
+  fold 06: train 1999-06-28~2016-11-01 | val 2017-01-01~2017-12-31 | test 2018-03-02~2018-12-31
+  fold 07: train 1999-06-28~2017-11-01 | val 2018-01-01~2018-12-31 | test 2019-03-02~2019-12-31
+  fold 08: train 1999-06-28~2018-11-01 | val 2019-01-01~2019-12-31 | test 2020-03-01~2020-12-31
+  fold 09: train 1999-06-28~2019-11-01 | val 2020-01-01~2020-12-31 | test 2021-03-02~2021-12-31
+  fold 10: train 1999-06-28~2020-11-01 | val 2021-01-01~2021-12-31 | test 2022-03-02~2022-12-31
+  fold 11: train 1999-06-28~2021-11-01 | val 2022-01-01~2022-12-31 | test 2023-03-02~2023-12-31
+  fold 12: train 1999-06-28~2022-11-01 | val 2023-01-01~2023-12-31 | test 2024-03-01~2024-12-31
+  fold 13: train 1999-06-28~2023-11-01 | val 2024-01-01~2024-12-31 | test 2025-03-02~2025-12-31
+
+=== fold 13 (test 2025) ===
+  samples: train=343,164  val=34,694  test=28,732
+  train_pos=0.3163  pos_weight=none
+  epoch  1: loss=0.6279  val_loss=0.5714  val_auc=0.5179  val_ap=0.2480  (46.1s)
+  epoch  2: loss=0.6175  val_loss=0.5770  val_auc=0.5227  val_ap=0.2545  (41.8s)
+  epoch  3: loss=0.6133  val_loss=0.5794  val_auc=0.5203  val_ap=0.2549  (38.0s)
+  epoch  4: loss=0.6091  val_loss=0.5864  val_auc=0.5214  val_ap=0.2542  (37.7s)
+  epoch  5: loss=0.6047  val_loss=0.5877  val_auc=0.5099  val_ap=0.2496  (38.0s)
+  [early stop] epoch 5
+  [TEST] AUC=0.5637  AP=0.3833  pos_rate=0.3270
+
+=== walk-forward summary (누적) ===
+ fold  test_year  train_n  val_n  test_n  val_auc  test_auc  test_ap
+   13       2025   343164  34694   28732 0.522734  0.563659 0.383304
+
+[mean] test_auc=0.5637  test_ap=0.3833

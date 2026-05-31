@@ -1,3 +1,0 @@
-variant,pooled_w_xgb,pooled_w_lstm,pooled_w_cnn,pooled_auc,meanfold_w_xgb,meanfold_w_lstm,meanfold_w_cnn,meanfold_auc,walkforward_oos_auc,ref_xgb_meanfold_auc,ref_equal_meanfold_auc
-baseline,0.7,0.24,0.06,0.553676,0.82,0.16,0.02,0.578175,0.573909,0.576077,0.553799
-youtube,0.42,0.47,0.11,0.554257,0.88,0.11,0.01,0.576704,0.572561,0.571893,0.552577
